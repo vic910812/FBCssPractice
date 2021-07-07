@@ -1,92 +1,97 @@
-<div class="header">
-    <div class="left-info">
-        <div class="thumbnail">
-            <img src="https://i.imgur.com/buisFMG.jpg" alt="">
-            <div class="name-info">
-                <a href="#">周杰倫</a>
-            </div>
-            <div class="time">
-                5月17日下午6:12
-                <i class="global-icon"></i>
+<!--用ID包住一個範圍，方便後續CSS對這個區塊的header content等做調整-->
+<div id="app">
+    <div class="header">
+        <link rel=stylesheet type="text/css" href="style.css">
+        <div class="left-info">
+            <div class="thumbnail">
+                <img src="https://i.imgur.com/buisFMG.jpg" alt="">
+                <div class="name-info">
+                    <a href="#">周杰倫</a>
+                </div>
+                <div class="time">
+                    5月17日下午6:12
+                    <i class="global-icon"></i>
+                </div>
             </div>
         </div>
+        <div class="right-info"></div>
     </div>
-    <div class="right-info"></div>
-</div>
 
-<div class="content">雨下整夜</div>
-<a href="https://www.youtube.com/watch?v=Bbp9ZaJD_eA" class="video-link" target="_blank">
-    <!--有target_blank跟target_new二種不同用法-->
-    <div class="video-wrapper">
-        <div class="video-thumbnail">
-            <img src="https://i.imgur.com/RC2a2nO.jpg" alt="">
-        </div>
-        <div class="video-description">
-            <div class="youtube-title">YOUTUBE.COM</div>
-            <div class="video-title">Jay Zou 周節輪【七里香 Qi-Li-Weeed】- Official Music Video</div>
-            <div class="video-descrip">你不要逼我解除封印！我個人覺得他不做作、笑得又自然，每個人都可以發大財，不要問為什麼！施主這個問題應該問問你自己，骨感的現實無法讓經濟好轉起步，好想訪問他啊！
+    <div class="content">雨下整夜</div>
+    <a href="https://www.youtube.com/watch?v=Bbp9ZaJD_eA" class="video-link" target="_blank">
+        <!--有target_blank跟target_new二種不同用法-->
+        <div class="video-wrapper">
+            <div class="video-thumbnail">
+                <img src="https://i.imgur.com/RC2a2nO.jpg" alt="">
+            </div>
+            <div class="video-description">
+                <div class="youtube-title">YOUTUBE.COM</div>
+                <div class="video-title">Jay Zou 周節輪【七里香 Qi-Li-Weeed】- Official Music Video</div>
+                <div class="video-descrip">
+                    你不要逼我解除封印！我個人覺得他不做作、笑得又自然，每個人都可以發大財，不要問為什麼！施主這個問題應該問問你自己，骨感的現實無法讓經濟好轉起步，好想訪問他啊！
+                </div>
             </div>
         </div>
-    </div>
-</a>
+    </a>
 
-<div class="feedback-info">
-    <div class="feedback-emojis">
-        <i class="icons like-icon"></i> 劉德華、東尼大木和其他3人
-    </div>
-    <div class="threads-and-share">
-        <div class="threads">14則留言</div>
-    </div>
-</div>
-
-<div class="feedback-action">
-    <div class="fb-wrapper">
-        <i class="fb-icon thumb-up"></i> 讚
-    </div>
-    <div class="fb-wrapper">
-        <i class="fb-icon response"></i> 回應
-    </div>
-    <div class="fb-wrapper">
-        <i class="fb-icon share"></i> 分享
-    </div>
-</div>
-
-<div class="comment">
-    <div class="my-comment-wrapper">
-        <div class="my-avatar">
-            <img src="https://i.imgur.com/gLtCsfv.jpg" alt="">
+    <div class="feedback-info">
+        <div class="feedback-emojis">
+            <i class="icons like-icon"></i> 劉德華、東尼大木和其他3人
         </div>
-        <div class="my-comment">
-            <div class="my-comment-placeholder">
-                <input type="text" placeholder="留言...">
-            </div>
+        <div class="threads-and-share">
+            <div class="threads">14則留言</div>
         </div>
     </div>
-    <div class="wrapper">
-        <div class="people-comment-wrapper">
-            <div class="people-avatar">
-                <img src="https://i.imgur.com/OP6rxk6.jpg" alt="">
+
+    <div class="feedback-action">
+        <div class="fb-wrapper">
+            <i class="fb-icon thumb-up"></i> 讚
+        </div>
+        <div class="fb-wrapper">
+            <i class="fb-icon response"></i> 回應
+        </div>
+        <div class="fb-wrapper">
+            <i class="fb-icon share"></i> 分享
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="my-comment-wrapper">
+            <div class="my-avatar">
+                <img src="https://i.imgur.com/gLtCsfv.jpg" alt="">
             </div>
-            <div class="people-comment">
-                <div class="people-comment-container">
-                    <div class="people-name">
-                        <a href="">玄米律師</a>
-                        <i class="blue-check"></i>
+            <div class="my-comment">
+                <div class="my-comment-placeholder">
+                    <input type="text" placeholder="留言...">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="people-comment-wrapper">
+                <div class="people-avatar">
+                    <img src="https://i.imgur.com/OP6rxk6.jpg" alt="">
+                </div>
+                <div class="people-comment">
+                    <div class="people-comment-container">
+                        <div class="people-name">
+                            <a href="">玄米律師</a>
+                            <i class="blue-check"></i>
+                        </div>
+                        <div class="div people-saying">我的愛溢出就像雨水</div>
                     </div>
-                    <div class="div people-saying">我的愛溢出就像雨水</div>
-                </div>
-                <div class="comment-reactions">
-                    <i class="icons like-icon"></i>
-                    <span class="number">8</span>
+                    <div class="comment-reactions">
+                        <i class="icons like-icon"></i>
+                        <span class="number">8</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="like-and-response-wrapper">
-            <div class="like-comment">
-                <a href="">讚</a>
-                <span class="tiny-dot">.</span>
+            <div class="like-and-response-wrapper">
+                <div class="like-comment">
+                    <a href="">讚</a>
+                    <span class="tiny-dot">.</span>
+                </div>
+                <days-comment>4天</days-comment>
             </div>
-            <days-comment>4天</days-comment>
         </div>
     </div>
 </div>

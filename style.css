@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e9ebee;
+  font-family: 'MicroSoft Jhenhei', sans-serif;
+}
+
+
+#app {
+    width: 500px;
+    background: white;
+    border: 1px solid #dddfe2;
+    border-radius: 4px;
+    padding-bottom: 12px;
+}

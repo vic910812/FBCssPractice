@@ -31,6 +31,7 @@ body {
     border: 1px solid;
 }
 */
+
 #app .header .left-info .thumbnail img {
     display: block;
     width: 40px;
@@ -80,4 +81,67 @@ body {
     width: 20px;
     height: 20px;
     cursor: pointer;
+}
+
+#app .content {
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 0; /*雨下整夜字間的間距*/
+    line-height: 25px; /*行高*/
+    margin: 0 0 7px 0; /*分別為上右下左 等同margin-bottom:7px*/
+    padding: 12px 12px 0; /*上 左右 下*/
+}
+
+#app .video-link {
+    text-decoration: none;
+}
+
+#app .video-link .video-wrapper {
+    display: flex;
+    background: #f2f3f5;
+    width: 500px;
+    height: 139px;
+    cursor: pointer;
+}
+
+#app .video-link .video-wrapper .video-thumbnail img {
+  width: 139px;
+  height: 139px;
+}
+
+#app .video-link .video-wrapper .video-description {
+    display: flex;
+    padding: 10px 12px; /*上下 左右*/
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid #dddfe2;
+    border-bottom: 1px solid #dddfe2;
+}
+
+#app .video-link .video-wrapper .video-description .youtube-title {
+    color: #606770;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+#app .video-link .video-wrapper .video-description .video-title {
+    color: #1d2129;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 20px;
+    padding-top: 2px;
+}
+
+#app .video-link .video-wrapper .video-description .video-descrip {
+    color: #606770;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 3px;
+    width: 330px;
+    max-height: 40px;
+    /*以下css-line-clamp效果*/
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
 }

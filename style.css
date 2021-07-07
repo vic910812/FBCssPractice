@@ -1,11 +1,10 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #e9ebee;
-  font-family: 'MicroSoft Jhenhei', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e9ebee;
+    font-family: 'MicroSoft Jhenhei', sans-serif;
 }
-
 
 #app {
     width: 500px;
@@ -13,4 +12,72 @@ body {
     border: 1px solid #dddfe2;
     border-radius: 4px;
     padding-bottom: 12px;
+}
+
+#app .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 12px 0;
+}
+
+#app .header .left-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 用框線讓撰寫CSS更清楚*/
+/** {
+    border: 1px solid;
+}
+*/
+#app .header .left-info .thumbnail img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+#app .header .left-info .name-info .name {
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+#app .header .left-info .name-info .name a {
+    text-decoration: none;
+    color: #365899
+}
+
+#app .header .left-info .name-info .name a:hover {
+    text-decoration: underline;
+}
+
+#app .header .left-info .name-info .time {
+    color: #616770;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app .header .left-info .name-info .time .global-icon {
+    width: 12px;
+    height: 12px;
+    background-position: -28px -499px;
+    background-image: url("https://weichiachang.github.io/easter-eggs-mobile/images/3o8Zo7X.png");
+    background-size: 73px 540px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 4px;
+}
+
+#app .header .right-info {
+    background-image: url("https://weichiachang.github.io/easter-eggs-mobile/images/dNpCLDT.png");
+    background-repeat: no-repeat;
+    background-size: 500px 287px;
+    background-position: -242px -245px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }

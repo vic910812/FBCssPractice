@@ -27,6 +27,7 @@ body {
 }
 
 /* 用框線讓撰寫CSS更清楚*/
+
 /** {
     border: 1px solid;
 }
@@ -86,10 +87,14 @@ body {
 #app .content {
     font-size: 25px;
     font-weight: 300;
-    letter-spacing: 0; /*雨下整夜字間的間距*/
-    line-height: 25px; /*行高*/
-    margin: 0 0 7px 0; /*分別為上右下左 等同margin-bottom:7px*/
-    padding: 12px 12px 0; /*上 左右 下*/
+    letter-spacing: 0;
+    /*雨下整夜字間的間距*/
+    line-height: 25px;
+    /*行高*/
+    margin: 0 0 7px 0;
+    /*分別為上右下左 等同margin-bottom:7px*/
+    padding: 12px 12px 0;
+    /*上 左右 下*/
 }
 
 #app .video-link {
@@ -105,13 +110,14 @@ body {
 }
 
 #app .video-link .video-wrapper .video-thumbnail img {
-  width: 139px;
-  height: 139px;
+    width: 139px;
+    height: 139px;
 }
 
 #app .video-link .video-wrapper .video-description {
     display: flex;
-    padding: 10px 12px; /*上下 左右*/
+    padding: 10px 12px;
+    /*上下 左右*/
     flex-direction: column;
     justify-content: center;
     border-top: 1px solid #dddfe2;
@@ -144,4 +150,91 @@ body {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     display: -webkit-box;
+}
+
+#app .feedback-info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dadde1;
+    margin: 10px 12px 0 12px;
+    padding: 0 0 10px 0;
+}
+
+/*.feedback-action * {
+    border: 1px solid;
+}*/
+
+#app .feedback-info .feedback-emojis {
+    min-width: 100px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+#app .feedback-info .feedback-emojis .icons.like-icon {
+    background-image: url("https://i.imgur.com/KNd9mL2.png");
+    background-repeat: no-repeat;
+    background-size: 49px 660px;
+    height: 16px;
+    width: 16px;
+    line-height: 16px;
+    margin-left: -2px;
+    margin-right: 2px;
+    background-position: 0 -526px;
+}
+
+#app .feedback-info .threads-and-share {
+    font-size: 14px;
+}
+
+#app .feedback-action {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 600;
+    font-size: 14px;
+    height: 32px;
+    color: #606770;
+    margin: 0 12px;
+    padding: 4px 0;
+}
+
+/*#app .feedback-action div {
+    cursor: pointer;
+}*/
+
+#app .feedback-action .fb-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+#app .feedback-action .fb-wrapper:hover {
+    background-color: rgba(29, 33, 41, 0.04);
+    border-radius: 2px;
+}
+
+#app .feedback-action .fb-wrapper .fb-icon {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin: 0 6px 0 0;
+}
+
+#app .feedback-action .fb-wrapper .fb-icon.thumb-up {
+    font-size: 18px;
+}
+
+#app .feedback-action .fb-wrapper .fb-icon.response {
+    background-image: url("https://i.imgur.com/1V94KpF.png");
+    background-size: 161px 376px;
+    background-position: -42px -249px;
+}
+
+#app .feedback-action .fb-wrapper .fb-icon.share {
+    background-image: url("https://i.imgur.com/1V94KpF.png");
+    background-size: 161px 376px;
+    background-position: -61px -249px;
 }

@@ -238,3 +238,165 @@ body {
     background-size: 161px 376px;
     background-position: -61px -249px;
 }
+
+#app .comments {
+    margin: 0 12px;
+    border-top: 1px solid #dadde1;
+}
+
+#app .my-comment-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+#app .my-comment-wrapper .my-avatar img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    display: block;
+    margin-right: 6px;
+}
+
+#app .my-comment-wrapper .my-comment {
+    background-color: #f2f3f5;
+    border: 1px solid #ccd0d5;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: text;
+    flex: 1 1 auto;
+    line-height: 16px;
+    padding: 7px 12px;
+}
+
+#app .my-comment-wrapper .my-comment-placeholder {
+    color: #8d949e;
+    font-size: 14px;
+}
+
+#app .my-comment-wrapper .my-comment-placeholder input[type=text] {
+    width: 410px;
+    outline: none;
+    padding: 0;
+    border: 0 solid transparent;
+    background: transparent;
+    font-size: 14px;
+}
+
+#app .people-comment-wrapper {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+#app .people-comment-wrapper .people-avatar img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+    margin-right: 6px;
+}
+
+#app .people-comment-wrapper .people-comment {
+    background-color: #f2f3f5;
+    border-radius: 18px;
+    color: #1c1e21;
+    line-height: 16px;
+    padding: 8px 12px;
+    position: relative;
+}
+
+#app .people-comment-wrapper .people-comment .people-comment-container {
+    color: #1c1e21;
+    font-size: 14px;
+    display: flex;
+}
+
+#app .people-comment-wrapper .people-comment .people-comment-container .people-name {
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+#app .people-comment-wrapper .people-comment .people-comment-container .people-name a {
+    text-decoration: none;
+    color: #365899;
+}
+
+#app .people-comment-wrapper .people-comment .people-comment-container .people-name a:hover {
+    text-decoration: underline;
+}
+
+#app .people-comment-wrapper .people-comment .people-comment-container .people-name .blue-check {
+    margin-left: 4px;
+    background-image: url("https://i.imgur.com/xgnUC5P.png");
+    background-repeat: no-repeat;
+    background-size: 28px 195px;
+    background-position: 0 -165px;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    vertical-align: -2px;
+}
+
+#app .people-comment-wrapper .people-comment .comment-reactions {
+    position: absolute;
+    bottom: 4px;
+    right: -25px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    color: #8d949e;
+    font-size: 12px;
+    padding: 2px 1px 2px 4px;
+}
+
+#app .people-comment-wrapper .people-comment .comment-reactions .icons.like-icon {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 2px 0 white;
+    background-image: url("https://i.imgur.com/KNd9mL2.png");
+    background-repeat: no-repeat;
+    background-size: 49px 660px;
+    background-position: 0 -526px;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    line-height: 16px;
+    display: inline-block;
+    margin-left: -2px;
+    margin-right: 2px;
+}
+
+#app .people-comment-wrapper .people-comment .comment-reactions number {
+    color: #777d88;
+    padding: 0 3px 0 2px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+#app .like-and-response-wrapper {
+    display: flex;
+    color: #90949c;
+    font-size: 13px;
+    line-height: 13px;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+#app .like-and-response-wrapper .tiny-dot {
+    margin-left: 2px;
+    margin-right: 4px;
+    color: #8d949e;
+}
+
+#app .like-and-response-wrapper .like-comment {
+    color: #365899;
+    cursor: pointer;
+}
